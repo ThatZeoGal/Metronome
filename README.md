@@ -1,4 +1,4 @@
-# TempoDough
+# Metronome
 A wavmark (wmb) creator for Rhythm Heaven Groove.
 
 ## What's a wavmark?
