@@ -1,4 +1,4 @@
-# Ninja build for TempoDough
+# Ninja build for Metronome
 
 pool link_pool
   depth = 1
@@ -20,6 +20,6 @@ build $outdir/main.o: cc src/main.cpp
 build $outdir/File.o: cc src/File.cpp
 build $outdir/Error.o: cc src/Error.cpp
 
-build $outdir/TempoDough: link $
+build $outdir/Metronome: link $
     $outdir/main.o $
     $outdir/File.o $outdir/Error.o

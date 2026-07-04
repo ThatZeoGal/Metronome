@@ -4,7 +4,6 @@
 #include <cmath>
 
 #include <Macro.hpp>
-#include <File.hpp>
 #include <Error.hpp>
 
 struct TempoChange
@@ -32,8 +31,8 @@ int main(int argc, char **argv)
 {
     if (argc < 5)
     {
-        printf("TempoDough v1.0\n");
-        printf("TempoDough was built " __DATE__ " " __TIME__ "\n\n");
+        printf("Metronome v1.0.1\n");
+        printf("Metronome was built " __DATE__ " " __TIME__ "\n\n");
 
         printf("usage: %s <path to wmb> <chart start index> <song length in beats> <beat,bpm>...\n", argv[0]);
         printf("          <song length in beats> (float): Beats start at 0.\n");
@@ -67,7 +66,7 @@ int main(int argc, char **argv)
     }
 
     // make file
-    FILE *fp = fopen(pathToWMB, "wb");
+    FILE *fp = fopen(pathToWMB, "wb+");
     if (fp == NULL)
     {
         Panic("Invalid file path.");
