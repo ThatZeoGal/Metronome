@@ -19,7 +19,9 @@ ldflags = -lm
 build $outdir/main.o: cc src/main.cpp
 build $outdir/File.o: cc src/File.cpp
 build $outdir/Error.o: cc src/Error.cpp
+build $outdir/WMBProc.o: cc src/proc/WMBProc.cpp
 
 build $outdir/Metronome: link $
     $outdir/main.o $
-    $outdir/File.o $outdir/Error.o
+    $outdir/File.o $outdir/Error.o $
+    $outdir/WMBProc.o
